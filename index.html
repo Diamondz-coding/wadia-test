@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;1,400&display=swap'); /*font-family: 'Josefin Sans', sans-serif;*/
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap'); /*font-family: 'Quicksand', sans-serif;*/
+        @import url('https://fonts.cdnfonts.com/css/sf-pro-display'); /*font-family: 'SF Pro Display', sans-serif;*/
+        @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@1,200&display=swap'); /*font-family: 'Urbanist', sans-serif;*/
+    </style>
+    <title>WADIA</title>
+</head>
+<body>
+    <script defer src="app.js"></script>
+    <nav id="navbar">
+        <ul>
+        <a href="#"><li>Home</li></a>
+        <a href="#slogan"><li>Products</li></a>
+        <a href="#aboutscroll"><li>About</li></a>
+        <a href="#footer"><li>Contact</li></a>
+        </ul>
+    </nav>
+
+    
+   <img  onclick="rotate()" id="arrow"src="image (3).png" alt="arrow" width="50px" height="50px">
+    
+    <h1 id="circle">1</h1>
+    <h1 id="circle2">1</h1>
+    <div class="container">
+        <script>
+                const main = document.body;
+                const styles = window.getComputedStyle(main);
+                const image = styles.height;
+                
+            function rotate(){
+                const main = document.body;
+    const styles = window.getComputedStyle(main);
+    const image = styles.backgroundImage;
+    const url = image.slice(5, -2);
+    console.log(url)
+    if (url == "http://localhost:5500/bgdark.png" || url == "http://127.0.0.1:5500/bgdark.png") {
+        document.body.style.backgroundImage = "url('bg.png')"
+            
+             document.getElementById('navbar').style.opacity = "0"
+             
+             document.getElementById("arrow").style.marginTop = "-220px"
+             document.getElementById("arrow").style.position = "fixed"
+             document.getElementById("arrow").src = "image (2).png"
+             
+             
+            }
+             else if(url == "http://localhost:5500/bg.png" || url == "http://127.0.0.1:5500/bg.png"){
+                document.body.style.backgroundImage = "url('bgdark.png')"
+                
+                document.getElementById('navbar').style.opacity="1"
+                document.getElementById('navbar').style.marginTop = "-300px"
+                document.getElementById("arrow").style.marginTop = "-140px"
+                document.getElementById("arrow").style.position = "fixed"
+                document.getElementById("arrow").src='image (3).png'
+                
+             }
+            }
+         </script>
+    <div id="welcomewrap">
+    <h1  class="hidden" id="welcometext">Welcome to Wadia</h1>
+    <div id="footerblend"></div>
+    <div id="footer"></div>
+
+</div>
+<h1 class="hidden"id="slogan">ELEGANCE, ELEVATED</h1>
+<img class="hidden" id="logo"src="image.png" alt="LOGO" width="340px" height="340px">
+<h1 id="chainstitle">CHAINS</h1>
+<img id="img2"class="hidden" src="5mmonwhite.jpg" width="480px" height="480px"></a>
+    <p class="hidden" id="img2p">5MM Cuban Link Chain</p><br><p id="img2p1">Available sizes:<br>.50cm<br>.55cm<br><br>Looking to elevate your style with a touch of <br>elegance? Look no further than our stunning <br>5mm Cuban chain. Crafted with precision and <br>attention to detail, this classic chain is the perfect <br>accessory to add a slight edge to any outfit. <br>With its sleek design and timeless appeal, it's the<br> perfect piece to complete any look. Whether you're<br> looking to dress up or add a touch of sophistication <br>to your attire, our 5mm Cuban chain<br> is the perfect choice <br><br> &#8205; &#8205; <div id="purch1"><a id=img2btn href="https://checkout.stripe.com/c/pay/cs_live_a1XpMuYUK7JfSm98hUGrmjj4S6i7FQKfGiZ4vWisW1q5dNKc7j7e1zBmtA#fidkdWxOYHwnPyd1blppbHNgWjA0SFNvbGJMXU5xdmdyf0d1VHVcVV9tc05CQVN8cTZScDVMRHBjVUJKQzJ2Q0FfRjRTcW11aG5TSm18bnRRdkRDY1RLa3ZxMTZNS2hKRjZgNFdCZGJ8NHJyNTVNSGxgNDxVVCcpJ3VpbGtuQH11anZgYUxhJz8nMnZMYF1rZ0R2NEZpMjBgPERAJyknd2BjYHd3YHdKd2xibGsnPydtcXF1dj8qKnJkYWxkK2xrY2oqJ3gl"> BUY HERE</a>&#8205; &#8205; <br> <br></p></div>
+    <img id="img3"class="hidden" src="5mm.jpg" width="480px" height="480px"></a>
+    <p class="hidden"id="img3p">3MM Cuban Link Chain</p> <p id="img3p1">Available sizes:<br>.50cm<br>.55cm<br><br>A 3mm cuban chain in silver is a classic and elegant<br> accessory that can be worn by anyone, regardless <br> of personal style. The interlocking links of the chain<br> are tightly woven together to create a durable and <br>strong piece of jewelry that can withstand daily<br> wear and tear. The 3mm size is perfect for those <br>who prefer a subtle and understated look, and the<br> silver color gives the chain a timeless quality that<br> will never go out of style. This chain can be worn on <br>its own as a statement piece or layered with other <br>necklaces for a more personalized look. With its<br> versatility and durability, a 3mm cuban chain in <br>silver is a great investment that you'll be able to<br> enjoy for years to come.<br><br> &#8205; &#8205; <div id="purch1"><a id=img3btn href="https://checkout.stripe.com/c/pay/cs_live_a1FAomvzKZnliKLTc547Dni4oQ5G8k79V5gBjmcOD2bFRoPny1LKmYrAEU#fidkdWxOYHwnPyd1blppbHNgWjA0SFNvbGJMXU5xdmdyf0d1VHVcVV9tc05CQVN8cTZScDVMRHBjVUJKQzJ2Q0FfRjRTcW11aG5TSm18bnRRdkRDY1RLa3ZxMTZNS2hKRjZgNFdCZGJ8NHJyNTVNSGxgNDxVVCcpJ3VpbGtuQH11anZgYUxhJz8nNTViNmBDZHJqZ2ZTY0dOPXJHJyknd2BjYHd3YHdKd2xibGsnPydtcXF1dj8qKnJkYWxkK2xrY2oqJ3gl"> BUY HERE</a>&#8205; &#8205; <br> <br></p></div>
+    <img class="hidden"id="img4"class="hidden" src="5mm.jpg" height="480px" width="480px"> </a>
+    <p class="hidden"id="img4p">3MM Cuban link Chain</p>
+    <img id="img5"class="hidden" src="https://via.placeholder.com/480"></a>
+    <p class="hidden"id="img5p">Place holder</p>
+    <div id="aboutscroll"></div>
+    <div id="abouttitle">
+      <h1>ABOUT US</h1>
+    </div>
+    <div id="about">
+      <h1 id="abouttext">We are Wadia, a company that was established in 2022 with a passion for providing customers with top-notch jewelry at an affordable price. Our focus has been on silver-plated stainless steel chains and necklaces, ensuring that our customers receive only the best quality products. Our silver-plated stainless steel chains are crafted from high-quality stainless steel and coated with a layer of silver, giving them a beautiful and sleek look. We understand the importance of having jewelry that can withstand daily wear and tear, and our chains are designed to do just that. Our stainless steel necklaces come in a variety of styles, from simple and elegant to bold and statement-making, so that customers can find the perfect piece to suit their personal style. At Wadia, affordability is a top priority. We believe that beautiful jewelry should be accessible to everyone, regardless of their budget. Our customers appreciate the fact that they can purchase high-quality silver-plated jewelry without having to spend a lot of money. Customer satisfaction is a top priority for us. Our friendly and knowledgeable customer service team is always available to answer any questions or concerns, and we have a no-hassle return policy to give customers peace of mind. Looking towards the future, we plan to broaden our collection to include other jewelry items, such as bracelets and other pieces. Our focus will always be on providing customers with high-quality, affordable jewelry that they can enjoy for years to come. In conclusion, at Wadia, we are dedicated to providing customers with silver-plated stainless steel chains and necklaces that are both stylish and durable. Our commitment to affordability and customer satisfaction sets us apart, and we look forward to expanding our collection to include other jewelry items in the future. Buy your jewelry here, save money there.</h1>
+      
+</div>
+<div class="footer">
+    <h1 id="footerh">Confused? Contact us!</h1>
+    <p id="email">contact@wadia.info</p>
+    <p id="social">TikTok - waidaofficial   &#8205;  &#8205; &#8205; &#8205; &#8205; &#8205; &#8205;| &#8205; &#8205; &#8205; &#8205; &#8205; &#8205; &#8205;      Instagram - wadiaofficial</p>
+    
+    <style>
+        #footerh{
+            font-size: 80px;
+            color: white;
+            margin-top: 6200px;
+            padding-left: 600px;
+            font-family: wadiafont;
+            font-weight: 100;
+
+        }
+        #footerh:hover{
+            transform: scale(1.1);
+        }
+        #email{
+            color: white;
+            padding-left: 750px;
+            font-size: 50px;
+            font-family: wadiafont;
+            font-weight: 100;
+        }
+        #email:hover{
+            transform: scale(1.1);
+        }
+        #social{
+            color: white;
+            z-index: 1;
+            font-family: wadiafont;
+            position: relative;
+            
+        }
+    </style>
+  </div>
+</body>
+</html>
