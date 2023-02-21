@@ -19,7 +19,7 @@
     <script defer src="app.js"></script>
     <nav id="navbar">
         <ul>
-        <a href="#"><li>Home</li></a>
+        <a href="#navbar"><li>Home</li></a>
         <a href="#slogan"><li>Products</li></a>
         <a href="#aboutscroll"><li>About</li></a>
         <a href="#footer"><li>Contact</li></a>
@@ -43,7 +43,7 @@
     const image = styles.backgroundImage;
     const url = image.slice(5, -2);
     console.log(url)
-    if (url == "http://localhost:5500/bgdark.png" || url == "http://127.0.0.1:5500/bgdark.png" || "https://diamondz-coding.github.io/wadia-test/bgdark.png") {
+    if (url == "http://localhost:5500/bgdark.png" || url == "http://127.0.0.1:5500/bgdark.png" || url == "https://diamondz-coding.github.io/wadia-test/bgdark.png") {
         document.body.style.backgroundImage = "url('bg.png')"
             
              document.getElementById('navbar').style.opacity = "0"
@@ -54,7 +54,7 @@
              
              
             }
-             else if(url == "http://localhost:5500/bg.png" || url == "http://127.0.0.1:5500/bg.png" || "https://diamondz-coding.github.io/wadia-test/bg.png"){
+             else if(url == "http://localhost:5500/bg.png" || url == "http://127.0.0.1:5500/bg.png" || url =="https://diamondz-coding.github.io/wadia-test/bg.png"){
                 document.body.style.backgroundImage = "url('bgdark.png')"
                 
                 document.getElementById('navbar').style.opacity="1"

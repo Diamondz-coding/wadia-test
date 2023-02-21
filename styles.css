@@ -294,14 +294,12 @@ border: solid 2px #000000;
 }
 .hidden{
     opacity: 0;
-    transform: translateX(-5%);
     filter: blur(50px);
     transition: all 1s;
 }
 .show{
     opacity: 1;
     filter: blur(0);
-    transform: translateX(0);
 }
 
 
