@@ -1,0 +1,459 @@
+#footerh{
+    font-size: 80px;
+    color: white;
+    margin-top: 6200px;
+    padding-left: 600px;
+    font-family: wadiafont;
+    font-weight: 100;
+
+}
+#footerh:hover{
+    transform: scale(1.1);
+}
+#email{
+    color: white;
+    padding-left: 750px;
+    font-size: 50px;
+    font-family: wadiafont;
+    font-weight: 100;
+}
+#email:hover{
+    transform: scale(1.1);
+}
+#social{
+    color: white;
+    z-index: 1;
+    font-family: wadiafont;
+    position: relative;
+    
+}
+#moreinfo{
+    font-family: wadiafont;
+    color: white;
+    font-weight: 100;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 40;
+}
+#chainphotos{
+    overflow-x: auto;
+    display: flex;
+    max-height: 480px;
+    width: 1200px;
+    margin-left: 350px;
+    background-color: rgba(134, 132, 132, 0);
+    border-radius: 15px;
+    margin-top: 1500px;
+
+}
+#chainphotos img{
+    
+    border: 2px dotted white;
+    
+}
+#img2{
+    border-radius: 20px;
+    
+}
+#img3{
+    border-radius: 20px;
+    margin-left: 100px;
+    
+}
+#img4{
+    border-radius: 20px;
+    margin-left: 100px;
+    
+}
+#img5{
+    border-radius: 20px;
+    margin-left: 100px;
+    
+}
+@media screen and (max-width: 2200px){
+    #welcometext{
+        margin-left: 670px;
+    }
+    #logo{
+        margin-left: 890px;
+    }
+    #slogan{
+        margin-left: 730px;
+    }
+    #chainstitle{
+        margin-left: 880px;
+    }
+    #arrow{
+        margin-left: 1035px;
+    }
+    #chainphotos{
+        margin-left: 450px;
+    }
+    #abouttitle{
+        margin-left: 900px;
+    }
+    #circle{
+        margin-left: 650px;
+    }
+    #circle2{
+        margin-left: 1000px;
+    }
+}
+@media screen and (max-width: 1600px) {
+
+    #welcometext{
+        margin-left: 395px;
+    }
+    #logo{
+        margin-left: 615px;
+    }
+    #circle{
+        margin-left: 340px;
+    }
+    #circle2{
+        margin-left: 720px;
+    }
+    #slogan{
+        margin-left: 460px;
+    }
+    #arrow{
+        margin-left: 760px;
+    }
+    #chainstitle{
+        margin-left: 590px;
+    }
+    #chainphotos{
+        overflow-x: auto;
+        display: flex;
+        max-height: 480px;
+        width: 1200px;
+        margin-left: 200px;
+        background-color: rgba(134, 132, 132, 0);
+        border-radius: 15px;
+        margin-top: 1200px;
+
+    }
+    #abouttitle{
+        margin-left: 640px;
+    }
+    #footerh{
+        font-size: 50px;
+        margin-top: 4000px;
+    }
+    #email{
+        font-size: 20px;
+    }
+    
+}
+@media screen and (max-width: 1367px){
+    #welcometext{
+        margin-left: 310px;
+    }
+    #logo{
+        margin-left: 510px;
+    }
+    #circle{
+        margin-left: 300px;
+    }
+    #circle2{
+        margin-left: 620px;
+    }
+    #slogan{
+        margin-left: 345px;
+    }
+    #chainstitle{
+        margin-left: 500px;
+    }
+    #chainphotos{
+        margin-left: 100px;
+    }
+    #arrow{
+        margin-left: 655px;
+    }
+    #abouttitle{
+        margin-left: 550px;
+    }
+}
+@media screen and (max-width: 1281px){
+    #welcometext{
+        margin-left: 242px;
+    }
+    #logo{
+        margin-left: 462px;
+    }
+    #slogan{
+        margin-left: 300px;
+    }
+    #chainstitle{
+        margin-left: 450px;
+    }
+    #abouttitle{
+        margin-left: 500px;
+    }
+    #arrow{
+        margin-left: 610px;
+    }
+}
+@media screen and (max-width: 1151px){
+    #welcometext{
+        font-size: 70px;
+        margin-left: 290px;
+    }
+    #logo{
+        margin-left: 400px;
+    }
+    #slogan{
+        margin-left: 240px;
+    }
+    #circle{
+        margin-left: 200px;
+    }
+    #circle2{
+        margin-left: 500px;
+    }
+    #chainstitle{
+        margin-left: 400px;
+    }
+    #abouttitle{
+        margin-left: 420px;
+    }
+    #arrow{
+        margin-left: 540px;
+    }
+}
+@media screen and (max-width: 1027px){
+    #welcometext{
+        margin-left: 235px;
+    }
+    #logo{
+        margin-left: 340px;
+    }
+    #slogan{
+        font-size: 35px;
+        margin-left: 230px;
+    }
+    #circle{
+        margin-left: 150px;
+    }
+    #circle2{
+        margin-left: 450;
+    }
+    #chainstitle{
+        margin-left: 340px;
+    }
+    #abouttitle{
+        margin-left: 350px;
+    }
+    #arrow{
+        margin-left: 490px;
+    }
+}
+@media screen and (max-width: 956px){
+    #welcometext{
+        margin-left: 200px;
+    }
+    #logo{
+        margin-left: 300px;
+    }
+    #slogan{
+        font-size: 25px;
+        margin-left: 260px;
+    }
+    #circle{
+        width: 400px;
+        height: 400px;
+    }
+    #circle2{
+        width: 400px;
+        height: 400px;
+        margin-left: 400px;
+    }
+    #chainstitle{
+        margin-left: 330px;
+        font-size: 70px;
+    }
+    #abouttitle{
+        margin-left: 330px;
+    }
+    #arrow{
+        margin-left: 448px;
+    }
+}
+@media screen and (max-width: 800px){
+    #welcometext{
+        margin-left: 125px;
+    }
+    #logo{
+        margin-left: 225px;
+    }
+    #slogan{
+        margin-left: 190px;
+    }
+    #arrow{
+        margin-left: 400px;
+    }
+    #chainstitle{
+
+    }
+}
+@media screen and (max-width: 719px){
+    #welcometext{
+        font-size: 45px;
+        margin-left: 170px;
+        }
+        #logo{
+            width: 300px;
+            height: 300px;
+            margin-left: 190px;
+            margin-top: 0px;
+        }
+        #slogan{
+            margin-top: 330px;
+            margin-left: 130px;
+        }
+        #circle{
+            animation: none;
+            width: 340px;
+            height: 340px;
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+        #circle2{
+            animation: none;
+            width: 400px;
+            height: 400px;
+            margin-top: 50px;
+            margin-left: 250px;
+        }
+        #chainstitle{
+            margin-left: 225px;
+        }
+        #abouttitle{
+            margin-left: 215px;
+        }
+        #arrow{
+            margin-left: 315px;
+        }
+}
+@media screen and (max-width: 600px){
+    #welcometext{
+        margin-left: 100px;
+    }
+    #logo{
+        width: 250px;
+        height: 250px;
+        margin-left: 150px;
+    }
+    #slogan{
+        font-size: 20px;
+        margin-top: 270px;
+        margin-left: 115px;
+    }
+    #chainstitle{
+        margin-left: 175px;
+    }
+    #abouttitle{
+        margin-left: 150px;
+    }
+    #arrow{
+        margin-left: 250px;
+    }
+    #circle{
+        width: 300px;
+        height: 300px;
+        margin-left: 100px;
+    }
+    #circle2{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media screen and (max-width: 510px){
+    nav ul li{
+        padding: 15px;
+        font-size: 20px;
+    }
+    #welcometext{
+        margin-left: 60px;
+    }
+    #logo{
+        margin-left: 110px;
+    }
+    #slogan{
+        margin-left: 70px;
+    }
+    #arrow{
+        margin-left: 210px;
+    }
+    #chainstitle{
+        margin-left: 115px;
+    }
+    #abouttitle{
+        font-size: 20px;
+        margin-top: 2920px;
+    }
+    #about h1{
+        font-size: 25px;
+    }
+    
+}
+@media screen and (max-width: 455px){
+    #welcometext{
+        font-size: 35px;
+    }
+    #logo{
+        width: 200px;
+        height: 200px;
+    }
+    #circle{
+        margin-left: 0px;
+    }
+    #circle2{
+        margin-left: 200px;
+    }
+    #slogan{
+        font-size: 17px;
+        margin-top: 210px;
+    }
+    #arrow{
+        margin-left: 185px;
+    }
+    #chainstitle{
+        margin-left: 80px;
+    }
+    #abouttitle{
+        margin-left: 120px;
+    }
+    nav ul li{
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 385px){
+    #logo{
+        margin-left: 80px;
+    }
+    #welcometext{
+        margin-left: 50px;
+    }
+    #slogan{
+        margin-left: 40px;
+    }
+    nav ul li {
+        font-size: 15px;
+    }
+    #chainstitle{
+        margin-left: 40px;
+    }
+    #abouttitle{
+        margin-left: 90px;
+    }
+    #arrow{
+        margin-left: 155px;
+    }
+    #circle{
+        margin-left: -50px;
+    }
+    #circle2{
+        margin-left: 150px;
+    }
+}

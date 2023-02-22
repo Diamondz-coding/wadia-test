@@ -1,523 +1,414 @@
 /* text imports */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;1,400&display=swap'); /*font-family: 'Josefin Sans', sans-serif;*/
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap'); /*font-family: 'Quicksand', sans-serif;*/
-@import url('https://fonts.cdnfonts.com/css/sf-pro-display'); /*font-family: 'SF Pro Display', sans-serif;*/
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@1,200&display=swap'); /*font-family: 'Urbanist', sans-serif;*/
-*{
-    transition: all, 0.5s;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;1,400&display=swap');
+/*font-family: 'Josefin Sans', sans-serif;
+*/
+ @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+/*font-family: 'Quicksand', sans-serif;
+*/
+ @import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+/*font-family: 'SF Pro Display', sans-serif;
+*/
+ @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@1,200&display=swap');
+/*font-family: 'Urbanist', sans-serif;
+*/
+ *{
+     transition: all, 0.5s;
 }
-a:visited{
-    text-decoration: none;
-    
+ a:visited{
+     text-decoration: none;
 }
-*:visited{
-    text-decoration: none;
+ *:visited{
+     text-decoration: none;
 }
-body:visited{
-    text-decoration: none;
+ body:visited{
+     text-decoration: none;
 }
-html {
-    overflow: scroll;
-    overflow-x: hidden;
-   
+ html {
+     overflow: scroll;
+     overflow-x: hidden;
+     
 }
-::-webkit-scrollbar
-{
-  border-radius: 11px;
-	width: 12px;
-	background-color: #F5F5F5;
+ ::-webkit-scrollbar {
+     border-radius: 11px;
+     width: 12px;
+     background-color: #F5F5F5;
+}
+ ::-webkit-scrollbar-thumb {
+     border-radius: 10px;
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+     background-color: #555;
+}
+ @keyframes orb {
+     0%{
+         transform: scale(0.9);
+    }
+     50%{
+         transform: scale(1);
+    }
+     100%{
+         transform: scale(0.9);
+    }
+}
+ @keyframes orb2{
+     0%{
+         margin-left: 600px;
+         position: absolute;
+    }
+     50%{
+         margin-left: 900px;
+         position: absolute;
+    }
+     100%{
+         margin-left: 600Px;
+         position: absolute;
+    }
+}
+ @keyframes orb3{
+     0%{
+         margin-left: 1000px;
+         position: absolute;
+    }
+     50%{
+         margin-left: 600px;
+         position: absolute;
+    }
+     100%{
+         
+    }
+}
+ @keyframes pulse {
+     0%{
+         transform: translateY(0);
+    }
+     50%{
+         transform: translateY(-20%);
+    }
+     100%{
+         transform: translateY(0);
+    }
+}
+ @keyframes pulsesize {
+     0%{
+         transform: scale(1) 
+    }
+     50%{
+         transform: scale(1.1) 
+    }
+     100%{
+         transform: scale(1) 
+    }
+}
+ @font-face {
+     font-family: wadiafont;
+     src: url(SFPRODISPLAYREGULAR.OTF);
+}
+ @font-face {
+     font-family: wadiaslogan;
+     src: url(IKARRG__.TTF);
+}
+@media screen and (max-width: 1600px) {
+
+    #welcometext{
+        margin-left: -100px;
+    }
+
+}
+ html{
+     scroll-behavior: smooth;
+}
+ body{
+     background-image: url(bgdark.png);
+     height: 5000px;
+     background-attachment: fixed;
+}
+ nav{
+     background-color: #0b0b0b;
+     margin-top: -300px;
+     margin-left: -10px;
+     margin-right: -10px;
+     height: 115px;
+     position:fixed;
+     z-index: 150;
+     width: 110%;
+     transition: all, 0.5s;
+     border-bottom: white 2px dotted;
+}
+ nav ul{
+     list-style: none;
+     display: flex;
+}
+ nav ul li{
+     display: inline;
+     margin-top: -5px;
+     color: white;
+     margin-left: 0px;
+     font-size: 20px;
+     font-family: 'Quicksand', sans-serif;
+     padding: 30px;
+     height: 80px;
+}
+ nav ul li:hover{
+     cursor: pointer;
+     color: gray;
+     transform: scale(1.1);
+}
+ a{
+     text-decoration: none;
+     color: white;
+}
+ p{
+     text-decoration: none;
+}
+ nav a{
+     text-decoration: none;
+     margin-top: 20px;
+}
+ a:hover{
+     cursor: pointer;
+     color: gray;
+     transform: scale(1.1);
+}
+ #welcometext{
+     color: white;
+     
+     margin-left: 600px;
+     font-weight: 900;
+     font-family: 'wadiafont';
+     margin-top: 100px;
+     z-index: 10;
+     font-size: 100px;
+}
+ #circle{
+     position: absolute;
+     height: 500px;
+     width: 500px;
+     background-color: rgba(255, 16, 16,1);
+     opacity: 90%;
+     border-radius: 50%;
+     display: inline-block;
+     margin-left: 500px;
+     filter: blur(100px);
+     animation: pulsesize 5s infinite;
+     margin-top: 100px;
+     z-index: 0;
+     -webkit-filter: blur(100px);
+     
+}
+ #circle2{
+     filter: blur(100px);
+     -webkit-filter: blur(100px);
+     position: absolute;
+     height: 500px;
+     animation: pulsesize 5s infinite;
+     width: 500px;
+     background-color: rgba(191, 113, 255,1);
+     
+     margin-top: 100px;
+     border-radius: 50%;
+     display: inline-block;
+     
+     z-index: 0;
+     margin-left: 900px;
+}
+ #circle:hover{
+     transform: scale(1.2);
+}
+ #circle2:hover{
+     transform: scale(1.2);
+}
+ #undernav{
+     display: none;
+     margin-top: 0px;
+     height: 20px;
+     z-index: 15;
+     margin-left:-10px;
+     margin-right: -10px;
+     background: rgb(255,255,255);
+     background: linear-gradient(180deg, rgba(255,255,255,1) 35%, rgba(0,0,0,1) 100%);
+}
+ @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+ #img2btn{
+     z-index: 30;
+     font-family: wadiafont;
+     font-weight: 0;
+     font-size: 15px;
+     color: #fff;
+     background-color: rgba(66, 66, 66, 0);
+     padding: 10px 30px;
+     border: solid #ffffff 2px;
+     box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+     border-radius: 12px;
+     transition : 1337ms;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     cursor: pointer;
+     position: absolute;
+     margin-top: 1365px;
+     margin-left: 793px;
+}
+ #img2btn:hover{
+     transition : 1337ms;
+     background-color: #f7f7f7;
+     color: #000000;
+     border: solid 2px #000000;
+}
+ #logo{
+     position: absolute;
+     margin-left: 770px;
+     margin-top: 75px;
+}
+ #chainstitle{
+     margin-top: 500px;
+     color: white;
+     font-size: 100px;
+     position: absolute;
+     margin-left: 765px;
+     margin-top: 800px;
+     font-family: wadiafont;
+     border-bottom: white 5px solid;
+}
+ #chainstitle:hover{
+     padding-bottom: 20px;
+     border-width: 7px;
+     cursor: pointer;
+}
+ .hidden{
+     opacity: 0;
+     filter: blur(50px);
+     transition: all 1s;
+}
+ .show{
+     opacity: 1;
+     filter: blur(0);
 }
 
-::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #555;
+ #threemmC{
+     color: white;
+     position: absolute;
+     z-index: 2;
+     margin-top: 1010px;
+     margin-left: 480px;
+     font-family: 'wadiafont';
+     font-size: 35px;
+}
+ .container{
+     margin-top: 300px;
 }
 
-@keyframes orb {
-    0%{
-        transform: scale(0.9);
-    }
-    50%{
-        transform: scale(1);
-    }
-    100%{
-        transform: scale(0.9);
-    }
+ #arrow{
+     margin-left: 915px;
+     animation: pulse 2s infinite;
+     border: none;
+     width: 50px;
+     height: 50px;
+     background: none;
+     margin-top: -140px;
+     position: fixed;
+     z-index: 200;
+     color: white;
+     cursor: pointer;
 }
-@keyframes orb2{
-    0%{
-        margin-left: 600px;
-    }
-    50%{
-        margin-left: 900px;
-    }
-    100%{
-        margin-left: 600Px;
-    }
+ #slogan {
+     position: absolute;
+     font-size: 40px;
+     color: white;
+     font-family: wadiaslogan;
+     font-weight: 100;
+     margin-left: 620px;
+     margin-top: 450px;
+     border: solid 7px rgb(255, 255, 255);
 }
-@keyframes orb3{
-    0%{
-        margin-left: 1000px;
-    }
-    50%{
-        margin-left: 600px;
-    }
-    100%{
-        margin-left: 1000px;
-    }
+ #slogan:hover{
+     transform: scale(1.05) 
 }
-@keyframes pulse {
-    0%{
-        transform: translateY(0);
-    }
-    50%{
-        transform: translateY(-20%);
-    }
-    100%{
-        transform: translateY(0);
-    }
+ #aboutscroll{
+     background: none;
+     margin-top: 2600px;
+     position: absolute;
+     width: 100%;
+     height: 300px;
 }
-@keyframes pulsesize {
-    0%{
-        transform: scale(1)
-    }
-    50%{
-        transform: scale(1.1)
-    }
-    100%{
-        transform: scale(1)
-    }
+ #abouttitle{
+     position: absolute;
+     margin-top: 2860px;
+     color: white;
+     margin-left: 750px;
+     font-size: 2em;
+     font-family: 'Urbanist', sans-serif;
 }
-@font-face {
-    font-family: wadiafont;
-    src: url(SFPRODISPLAYREGULAR.OTF);
+ #about h1{
+     position: absolute;
+     color: white;
+     margin-left: 10%;
+     font-size: 30px;
+     width: 80%;
+     font-stretch: condensed;
+     margin-top: 3000px;
+     border: dotted 7px #f2f2f2;
+     font-family: 'Urbanist', sans-serif;
 }
-@font-face {
-    font-family: wadiaslogan;
-    src: url(IKARRG__.TTF);
-}
-html{
-    scroll-behavior: smooth;
-}
-body{
-    background-image: url(bgdark.png);
-    height: 5000px;
-    background-attachment: fixed;
-}
-nav{
-    background-color: #0b0b0b;
-    margin-top: -300px;
-    margin-left: -10px;
-    margin-right: -10px;
-    height: 115px;
-    position:fixed;
-    z-index: 150;
-    width: 110%;
-    transition: all, 0.5s;
-    border-bottom: white 2px dotted;
-    
-}
-
-nav ul{
-    list-style: none;
-    
-    display: flex;
-}
-nav ul li{
+#chainphotos{
     display: inline;
-    
-    margin-top: -5px;
-    
-    color: white;
-    
-    margin-left: 0px;
-    
-    font-size: 20px;
-    font-family: 'Quicksand', sans-serif;
-    padding: 30px;
-    height: 80px;
-   
-}
-nav ul li:hover{
-    cursor: pointer;
-    color: gray;
-    transform: scale(1.1);
+    overflow-x: scroll;
+    width: 500px;
+    height: 10000px;
+    overflow-y: auto;
     
     
-}
-a{
-    text-decoration: none;
-    color: white;
-}
-p{
-    text-decoration: none;
-    
-}
-nav a{
-    text-decoration: none;
-    margin-top: 20px;
-}
-a:hover{
-    cursor: pointer;
-    color: gray;
-    transform: scale(1.1);
-}
-#welcometext{
-    color: white;
-    text-align: center;
-    font-family: 'wadiafont';
-    
-    margin-top: 100px;
-    
-    animation: pulsesize 3s infinite;
-    font-size: 75px;
-    
-    
-}
-#circle{
-    position: absolute;
-    height: 400px;
-  width: 400px;
-  background-color: rgba(255, 16, 16, 0.452);
-  opacity: 50%;
-  border-radius: 50%;
-  display: inline-block;
-  margin-left: 700px;
-  filter: blur(50px);
-  margin-top: 100px;
-  z-index: 100;
-  -webkit-filter: blur(50px);
-  animation: orb3 8s infinite;
-}
-#circle2{
-    filter: blur(50px);
-    -webkit-filter: blur(50px);
-    position: absolute;
-    height: 400px;
-  width: 400px;
-  background-color: rgba(191, 113, 255, 0.61);
-  opacity: 50%;
-  margin-top: 100px;
-  border-radius: 50%;
-  display: inline-block;
-  animation: orb2 8s infinite;
-  z-index: 100;
-  margin-left: 1000px;
-}
-#circle:hover{
-    transform: scale(1.2);
-}
-#circle2:hover{
-    transform: scale(1.2);
-}
-
-#undernav{
-    display: none;
-    margin-top: 0px;
-    height: 20px;
-    z-index: 15;
-    margin-left:-10px;
-    margin-right: -10px;
-    background: rgb(255,255,255);
-background: linear-gradient(180deg, rgba(255,255,255,1) 35%, rgba(0,0,0,1) 100%);
 
 }
 
-
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
-
-
-#img2btn{
-z-index: 30;
-font-family: wadiafont;
-font-weight: 0;
-font-size: 15px;
-color: #fff;
-background-color: rgba(66, 66, 66, 0);
-padding: 10px 30px;
-border: solid #ffffff 2px;
-box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
-border-radius: 12px;
-transition : 1337ms;
-
-display: flex;
-flex-direction: row;
-align-items: center;
-cursor: pointer;
-position: absolute;
-margin-top: 1365px;
-margin-left: 793px;
-}
-
-#img2btn:hover{
-
-transition : 1337ms;
-
-background-color: #f7f7f7;
-color: #000000;
-border: solid 2px #000000;
-}
-
-
-
-
-
-
-
-
-
-#logo{
-    position: absolute;
-    margin-left: 770px;
-    margin-top: 75px;
-    
-    
-}
-#chainstitle{
-    margin-top: 500px;
-    color: white;
-    font-size: 100px;
-    position: absolute;
-    margin-left: 765px;
-    margin-top: 800px;
-    font-family: wadiafont;
-    border-bottom: white 5px solid;
-}
-#chainstitle:hover{
-    padding-bottom: 20px;
-    border-width: 7px;
-    
-    cursor: pointer;
-}
-.hidden{
-    opacity: 0;
-    filter: blur(50px);
-    transition: all 1s;
-}
-.show{
-    opacity: 1;
-    filter: blur(0);
-}
-
-
-#img2{
-    position: absolute;
-    margin-top: 1000px;
-    border: gray ridge 10px;
-    border-radius: 10px;
-    
-}
-
-#img3{
-    position: relative;
-    margin-top: 930px;
-    margin-right: -20px;
-    float: right;
-    margin-right: 20px;
-    border: gray ridge 10px;
-    border-radius: 10px;
-}
-#img4{
-    position: absolute;
-    margin-top: 1960px;
-    border: gray ridge 10px;
-    border-radius: 10px;
-}
-#img5{
-    z-index: 2;
-    position: relative;
-    margin-top: 1960px;
-    float: right;
-    margin-right: -1429px;
-    border: gray ridge 10px;
-    border-radius: 10px;
-}
-#threemmC{
-    color: white;
-    position: absolute;
-    z-index: 2;
-    margin-top: 1010px;
-    margin-left: 480px;
-    font-family: 'wadiafont';
-    font-size: 35px;
-}
-.container{
-    margin-top: 300px;
-}
-#img2p{
-    color: white;
-    position: absolute;
-    float: right;
-    z-index: 2;
-    font-size: 30px;
-    margin-top: 1010px;
-    margin-left: 510px;
-    margin-right: 20px;
-    font-family: wadiafont;
-    border-bottom: white 3px solid;
-}
-#img2p1:visited{
-    text-decoration: none;
-    color: white;
-}
-#img2p1{
-    color: white;
-    position: absolute;
-    float: right;
-    z-index: 2;
-    font-size: 20px;
-    margin-top: 1030px;
-    margin-left: 510px;
-    margin-right: 20px;
-    font-family: 'wadiafont';
-    
-    
-    
-}
-#img3p{
-    color: white;
-    position: relative;
-    float: right;
-    z-index: 2;
-    font-size: 30px;
-    margin-top: 940px;
-    margin-left: 480px;
-    margin-right: 20px;
-    font-family: wadiafont;
-    border-bottom: white 3px solid;
-}
-
-#img4p{
-    color: white;
-    position: absolute;
-    z-index: 2;
-    margin-top: 1970px;
-    margin-left: 510px;
-    font-family: wadiafont;
-}
-#img5p{
-    color: white;
-    position: absolute;
-    float: right;
-    z-index: 2;
-    margin-top: 1970px;
-    margin-left: 1250px;
-    margin-right: -550px;
-    font-family: wadiafont;
-}
-
-#arrow{
-    margin-left: 915px;
-    animation: pulse 2s infinite;
-    border: none;
-    width: 50px;
-    height: 50px;
-    background: none;
-    margin-top: -140px;
-    position: fixed;
-    z-index: 200;
-    color: white;
-    cursor: pointer;
-}
-#slogan {
-    position: absolute;
-    font-size: 40px;
-    color: white;
-    font-family: wadiaslogan;
-    font-weight: 100;
-    margin-left: 620px;
-    margin-top: 450px;
-    border: solid 7px rgb(255, 255, 255);
-}
-#slogan:hover{
-    transform: scale(1.05)
-    
-}
-#aboutscroll{
-    background: none;
-    margin-top: 2600px;
-    position: absolute;
-    width: 100%;
-    height: 300px;
-}
-#abouttitle{
-    position: absolute;
-    margin-top: 2860px;
-    color: white;
-    margin-left: 750px;
-    font-size: 2em;
-    font-family: 'Urbanist', sans-serif;
-}
-#about h1{
-    position: absolute;
-    color: white;
-    margin-left: 10%;
-    font-size: 30px;
-    width: 80%;
-    font-stretch: condensed;
-    margin-top: 3000px;
-    border: dotted 7px #f2f2f2;
-    font-family: 'Urbanist', sans-serif;
-    
+ #footer{
+     
+     position: absolute;
+     top: 850%;
+     bottom: 0;
+     background-color: #e6e7e0;
+     opacity: 60%;
+     width: 110%;
+     margin-left: -10px;
+     height: 300px;
+     z-index: -1;
 
 }
-#footer{
-    margin-top: 6240px;
-    position: absolute;
-    background-color: #e6e7e0;
-    opacity: 60%;
-    width: 110%;
-    height: 300px;
-    z-index: -1;
-    
+ #footerh{
+     color: white;
 }
-#footerh{
-    
-    color: white;
+ #img3p1{
+     position: absolute;
+     margin-left: 940px;
+     color: white;
+     margin-top: 980px;
+     font-size: 20px;
+     font-family: wadiafont;
+     padding-left: 10px;
+     border-left: dotted 3px rgb(255, 255, 255);
 }
-#img3p1{
-    position: absolute;
-    margin-left: 940px;
-    color: white;
-    
-    margin-top: 980px;
-    font-size: 20px;
-    font-family: wadiafont;
-    padding-left: 10px;
-    border-left: dotted 3px rgb(255, 255, 255);
+ #img3btn{
+     z-index: 30;
+     font-family: wadiafont;
+     font-weight: 0;
+     font-size: 15px;
+     color: #fff;
+     background-color: rgba(66, 66, 66, 0);
+     padding: 10px 30px;
+     border: solid #ffffff 2px;
+     box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+     border-radius: 12px;
+     transition : 1337ms;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     cursor: pointer;
+     position: absolute;
+     margin-top: 1420px;
+     margin-left: 960px;
 }
-
-#img3btn{
-z-index: 30;
-font-family: wadiafont;
-font-weight: 0;
-font-size: 15px;
-color: #fff;
-background-color: rgba(66, 66, 66, 0);
-padding: 10px 30px;
-border: solid #ffffff 2px;
-box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
-border-radius: 12px;
-transition : 1337ms;
-
-display: flex;
-flex-direction: row;
-align-items: center;
-cursor: pointer;
-position: absolute;
-margin-top: 1420px;
-margin-left: 960px;
-
+ #img3btn:hover{
+     transition : 1337ms;
+     background-color: #f7f7f7;
+     color: #000000;
+     border: solid 2px #000000;
 }
-
-#img3btn:hover{
-
-transition : 1337ms;
-
-background-color: #f7f7f7;
-color: #000000;
-border: solid 2px #000000;
-}
+ 
