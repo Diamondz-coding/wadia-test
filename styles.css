@@ -111,7 +111,7 @@
      scroll-behavior: smooth;
 }
  body{
-    background-image: url(/imgs/bgdark.png);
+    background-image: url(https://raw.githubusercontent.com/Diamondz-coding/wadia-test/main/bgdark.png);
     background-size: auto;
      height: 5000px;
      background-attachment: fixed;
@@ -142,12 +142,14 @@
      padding: 30px;
      height: 80px;
 }
-
- nav ul li:hover{
-     cursor: pointer;
-     color: gray;
-     transform: scale(1.1);
+@media (hover:hover) {
+    nav ul li:hover{
+        cursor: pointer;
+        color: gray;
+        transform: scale(1.1);
+    }
 }
+
  a{
      text-decoration: none;
      color: white;
@@ -159,11 +161,12 @@
      text-decoration: none;
      margin-top: 20px;
 }
+@media (hover:hover) {
  a:hover{
      cursor: pointer;
      color: gray;
      transform: scale(1.1);
-}
+}}
  #welcometext{
      color: white;
      
@@ -184,7 +187,7 @@
      display: inline-block;
      margin-left: 500px;
      filter: blur(100px);
-     animation: pulsesize 5s infinite;
+     
      margin-top: 100px;
      z-index: 0;
      -webkit-filter: blur(100px);
@@ -195,7 +198,7 @@
      -webkit-filter: blur(100px);
      position: absolute;
      height: 500px;
-     animation: pulsesize 5s infinite;
+     
      width: 500px;
      background-color: rgba(191, 113, 255,1);
      
@@ -206,12 +209,17 @@
      z-index: 0;
      margin-left: 900px;
 }
+@media (hover:hover) {
  #circle:hover{
      transform: scale(1.2);
+     animation: pulsesize 5s infinite;
 }
  #circle2:hover{
      transform: scale(1.2);
+     animation: pulsesize 5s infinite;
 }
+}
+
  #undernav{
      display: none;
      margin-top: 0px;
@@ -223,32 +231,7 @@
      background: linear-gradient(180deg, rgba(255,255,255,1) 35%, rgba(0,0,0,1) 100%);
 }
  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
- #img2btn{
-     z-index: 30;
-     font-family: wadiafont;
-     font-weight: 0;
-     font-size: 15px;
-     color: #fff;
-     background-color: rgba(66, 66, 66, 0);
-     padding: 10px 30px;
-     border: solid #ffffff 2px;
-     box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
-     border-radius: 12px;
-     transition : 1337ms;
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-     cursor: pointer;
-     position: absolute;
-     margin-top: 1365px;
-     margin-left: 793px;
-}
- #img2btn:hover{
-     transition : 1337ms;
-     background-color: #f7f7f7;
-     color: #000000;
-     border: solid 2px #000000;
-}
+
  #logo{
      position: absolute;
      margin-left: 770px;
@@ -264,11 +247,12 @@
      font-family: wadiafont;
      border-bottom: white 5px solid;
 }
+@media (hover:hover) {
  #chainstitle:hover{
      padding-bottom: 20px;
      border-width: 7px;
      cursor: pointer;
-}
+}}
  .hidden{
      opacity: 0;
      filter: blur(50px);
@@ -314,10 +298,10 @@
      margin-left: 620px;
      margin-top: 450px;
      border: solid 7px rgb(255, 255, 255);
-}
+}@media (hover:hover) {
  #slogan:hover{
      transform: scale(1.05) 
-}
+}}
  #aboutscroll{
      background: none;
      margin-top: 2600px;
@@ -363,55 +347,28 @@
     margin-bottom: 200px;
     margin-top: -360px;
     border-radius: 20px;
-    background-color: wheat;
+    background-color: rgb(255, 255, 255);
     text-align: center;
     margin-left: 550px;
     display: none;
+    font-size: 30px;
+    font-family: wadiafont;
+    border: 5px solid black;
+}
+#contactlogo{
+margin-right:570px;
+margin-top: -170px;
     
-
 }
-#contactpopup img{
-    float: right;
-    margin-right: 50px;
-    margin-top: -50px;
+#cross{
+    
+    margin-left: 420px;
+    margin-top: -125px;
+    position: absolute;
 }
+@media (hover:hover) {
 #contactpopup img:hover{
     cursor: pointer;
-}
- #img3p1{
-     position: absolute;
-     margin-left: 940px;
-     color: white;
-     margin-top: 980px;
-     font-size: 20px;
-     font-family: wadiafont;
-     padding-left: 10px;
-     border-left: dotted 3px rgb(255, 255, 255);
-}
- #img3btn{
-     z-index: 30;
-     font-family: wadiafont;
-     font-weight: 0;
-     font-size: 15px;
-     color: #fff;
-     background-color: rgba(66, 66, 66, 0);
-     padding: 10px 30px;
-     border: solid #ffffff 2px;
-     box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
-     border-radius: 12px;
-     transition : 1337ms;
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-     cursor: pointer;
-     position: absolute;
-     margin-top: 1420px;
-     margin-left: 960px;
-}
- #img3btn:hover{
-     transition : 1337ms;
-     background-color: #f7f7f7;
-     color: #000000;
-     border: solid 2px #000000;
-}
+}}
+
  

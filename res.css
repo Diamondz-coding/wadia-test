@@ -107,7 +107,9 @@
         margin-left: 670px;
     }
     #logo{
-        margin-left: 890px;
+        margin-left: 850px;
+        width: 450px;
+        height: 450px;
     }
     #slogan{
         margin-left: 730px;
@@ -136,7 +138,9 @@
         margin-left: 565px;
     }
     #logo{
-        margin-left: 780px;
+        margin-left: 730px;
+        width: 450px;
+        height: 450px;
     }
     #slogan{
         margin-left: 620px;
@@ -167,7 +171,7 @@
         margin-left: 395px;
     }
     #logo{
-        margin-left: 615px;
+        margin-left: 550px;
     }
     #circle{
         margin-left: 340px;
@@ -212,7 +216,7 @@
         margin-left: 310px;
     }
     #logo{
-        margin-left: 510px;
+        margin-left: 450px;
     }
     #circle{
         margin-left: 300px;
@@ -241,7 +245,7 @@
         margin-left: 242px;
     }
     #logo{
-        margin-left: 462px;
+        margin-left: 400px;
     }
     #slogan{
         margin-left: 300px;
@@ -262,6 +266,8 @@
         margin-left: 290px;
     }
     #logo{
+        width: 340px;
+        height: 340px;
         margin-left: 400px;
     }
     #slogan{
@@ -292,6 +298,7 @@
     }
     #slogan{
         font-size: 35px;
+        margin-top: 350px;
         margin-left: 230px;
     }
     #circle{
@@ -355,7 +362,13 @@
         margin-left: 400px;
     }
     #chainstitle{
-
+        margin-left: 280px;
+    }
+    #chainphotos{
+        width: 600px;
+    }
+    #arrow{
+        margin-left: 370px;
     }
 }
 @media screen and (max-width: 719px){
