@@ -92,7 +92,7 @@
          transform: scale(1) 
     }
      50%{
-         transform: scale(1.1) 
+         transform: scale(1.2) 
     }
      100%{
          transform: scale(1) 
@@ -111,7 +111,8 @@
      scroll-behavior: smooth;
 }
  body{
-     background-image: url(bgdark.png);
+    background-image: url(/imgs/bgdark.png);
+    background-size: auto;
      height: 5000px;
      background-attachment: fixed;
 }
@@ -141,6 +142,7 @@
      padding: 30px;
      height: 80px;
 }
+
  nav ul li:hover{
      cursor: pointer;
      color: gray;
@@ -291,13 +293,13 @@
 }
 
  #arrow{
-     margin-left: 915px;
+     margin-left: 900px;
      animation: pulse 2s infinite;
      border: none;
      width: 50px;
      height: 50px;
      background: none;
-     margin-top: -140px;
+     margin-top: -240px;
      position: fixed;
      z-index: 200;
      color: white;
@@ -353,21 +355,28 @@
 
 }
 
- #footer{
-     
-     position: absolute;
-     top: 850%;
-     bottom: 0;
-     background-color: #e6e7e0;
-     opacity: 60%;
-     width: 110%;
-     margin-left: -10px;
-     height: 300px;
-     z-index: -1;
+#contactpopup{
+    width: 800px;
+    height: 800px;
+    position: fixed;
+    z-index: 500;
+    margin-bottom: 200px;
+    margin-top: -360px;
+    border-radius: 20px;
+    background-color: wheat;
+    text-align: center;
+    margin-left: 550px;
+    display: none;
+    
 
 }
- #footerh{
-     color: white;
+#contactpopup img{
+    float: right;
+    margin-right: 50px;
+    margin-top: -50px;
+}
+#contactpopup img:hover{
+    cursor: pointer;
 }
  #img3p1{
      position: absolute;

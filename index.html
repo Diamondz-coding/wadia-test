@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="res.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -16,19 +16,29 @@
     <title>WADIA</title>
 </head>
 <body>
-    <script defer src="mobilewidthcheck.js"></script>
-    <script defer src="app.js"></script>
+    <script>
+        function showcontact(){
+            document.getElementById('contactpopup').style.display = "block";}
+    </script>
+    <script>
+        function closecontact(){
+            document.getElementById('contactpopup').style.display = "none";
+        }
+    </script>
+    <script defer src="/js/app.js"></script>
     <nav id="navbar">
         <ul>
         <a href="#welcometext"><li>Home</li></a>
         <a href="#slogan"><li>Products</li></a>
         <a href="#aboutscroll"><li>About</li></a>
-        <a href="#footer"><li>Contact</li></a>
+        <a href="#footer" onclick="showcontact()"><li>Contact</li></a>
         </ul>
     </nav>
-
+    <script defer src="/js/dishov.js"></script>
+        
     
-   <img  onclick="rotate()" id="arrow"src="image (3).png" alt="arrow" width="50px" height="50px">
+    
+   <img  onclick="rotate()" id="arrow" src="/imgs/arrowup1.png" alt="arrow" >
     
     <h1 id="circle">1</h1>
     <h1 id="circle2">1</h1>
@@ -44,25 +54,25 @@
     const image = styles.backgroundImage;
     const url = image.slice(5, -2);
     console.log(url)
-    if (url == "http://localhost:5500/bgdark.png" || url == "http://127.0.0.1:5500/bgdark.png" || url == "https://diamondz-coding.github.io/wadia-test/bgdark.png") {
-        document.body.style.backgroundImage = "url('bg.png')"
+    if (url == "http://localhost:5500/imgs/bgdark.png" || url == "http://127.0.0.1:5500/imgs/bgdark.png" || url == "https://diamondz-coding.github.io/wadia-test/imgs/bgdark.png") {
+        document.body.style.backgroundImage = "url('/imgs/bg.png')"
             
              document.getElementById('navbar').style.opacity = "0"
              
-             document.getElementById("arrow").style.marginTop = "-220px"
+             document.getElementById("arrow").style.marginTop = "-260px"
              document.getElementById("arrow").style.position = "fixed"
-             document.getElementById("arrow").src = "image (2).png"
+             document.getElementById("arrow").src = "/imgs/arrowdown1.png"
              
              
             }
-             else if(url == "http://localhost:5500/bg.png" || url == "http://127.0.0.1:5500/bg.png" || url =="https://diamondz-coding.github.io/wadia-test/bg.png"){
-                document.body.style.backgroundImage = "url('bgdark.png')"
+             else if(url == "http://localhost:5500/imgs/bg.png" || url == "http://127.0.0.1:5500/imgs/bg.png" || url =="https://diamondz-coding.github.io/wadia-test/imgs/bg.png"){
+                document.body.style.backgroundImage = "url('/imgs/bgdark.png')"
                 
                 document.getElementById('navbar').style.opacity="1"
                 document.getElementById('navbar').style.marginTop = "-300px"
-                document.getElementById("arrow").style.marginTop = "-140px"
+                document.getElementById("arrow").style.marginTop = "-240px"
                 document.getElementById("arrow").style.position = "fixed"
-                document.getElementById("arrow").src='image (3).png'
+                document.getElementById("arrow").src='/imgs/arrowup1.png'
                 
              }
             }
@@ -72,15 +82,19 @@
 
 
 </div>
+<div id="contactpopup">
+    <h1>test</h1>
+    <img onclick="closecontact()" src="/imgs/cross.png" alt="close contactpopup" width="50px" height="50px">
+</div>
 <h1 id="slogan">ELEGANCE, ELEVATED</h1>
-<img  id="logo"src="image.png" alt="LOGO" width="340px" height="340px">
+<img  id="logo"src="/imgs/image.png" alt="LOGO" width="340px" height="340px">
 <h1 id="chainstitle">CHAINS</h1>
 <div id="chainphotos">
-<img id="img2"class="hidden" src="5mmonwhite.jpg" width="400px" height="400x"></a>
+<img id="img2"class="hidden" src="/imgs/5mmonwhite.jpg" width="400px" height="400x"></a>
    <h1 id="moreinfo">Click for more information</h1>
-    <img id="img3"class="hidden" src="5mm.jpg" width="400px" height="400px"></a>
+    <img id="img3"class="hidden" src="/imgs/5mm.jpg" width="400px" height="400px"></a>
    
-    <img class="hidden"id="img4"class="hidden" src="compare.jpg" height="400px" width="400px"> </a>
+    <img class="hidden"id="img4"class="hidden" src="/imgs/compare.jpg" height="400px" width="400px"> </a>
 
     <img id="img5"class="hidden" src="https://via.placeholder.com/400" width="400px" height="400px"></a>
 
