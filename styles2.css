@@ -99,6 +99,36 @@
         margin-left: 1000px;
     }
 }
+@media screen and (max-width: 1940px){
+    #welcometext{
+        margin-left: 565px;
+    }
+    #logo{
+        margin-left: 780px;
+    }
+    #slogan{
+        margin-left: 620px;
+    }
+    #circle{
+        margin-left: 500px;
+    }
+    #circle2{
+        margin-left: 880px;
+    }
+    #chainstitle{
+        margin-left: 750px;
+    }
+    #chainphotos{
+        margin-left: 350px;
+        margin-top: 1200px;
+    }
+    #abouttitle{
+        margin-left: 800px;
+    }
+    #arrow{
+        margin-left: 925px;
+    }
+}
 @media screen and (max-width: 1600px) {
 
     #welcometext{

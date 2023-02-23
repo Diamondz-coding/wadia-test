@@ -106,13 +106,7 @@
      font-family: wadiaslogan;
      src: url(IKARRG__.TTF);
 }
-@media screen and (max-width: 1600px) {
 
-    #welcometext{
-        margin-left: -100px;
-    }
-
-}
  html{
      scroll-behavior: smooth;
 }
