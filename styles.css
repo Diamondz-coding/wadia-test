@@ -38,6 +38,14 @@
      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
      background-color: #555;
 }
+.preload{
+    height: 0px;
+    width: 0px;
+    background-image: url(bg.png);
+    background-image: url(bgdark.png);
+    background-image: url(arrowdown1.png);
+    background-image: url(arrowup1.png);
+}
  @keyframes orb {
      0%{
          transform: scale(0.9);
@@ -358,14 +366,20 @@
     background-color: rgb(255, 255, 255);
     text-align: center;
     margin-left: 550px;
-    display: none;
+    display: block;
     font-size: 30px;
     font-family: wadiafont;
     border: 5px solid black;
+    font-family: 'wadia', sans-serif;
+}
+#contactp{
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
 }
 #contactlogo{
-margin-right:570px;
-margin-top: -100px;
+margin-left:-200px;
+margin-top: -250px;
 position: absolute;
     
 }
