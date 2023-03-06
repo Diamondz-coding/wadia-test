@@ -361,6 +361,10 @@
      border: dotted 7px #f2f2f2;
      font-family: 'Urbanist', sans-serif;
 }
+#about{
+    margin-bottom: 400px;
+    
+}
 #chainphotos{
     display: inline;
     overflow-x: scroll;
@@ -383,7 +387,7 @@
     background-color: rgb(255, 255, 255);
     text-align: center;
     margin-left: 530px;
-    display: block;
+    display: none;
     font-size: 30px;
     font-family: wadiafont;
     border: 5px solid black;
